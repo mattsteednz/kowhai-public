@@ -52,12 +52,15 @@ try {
   console.log(`Connecting to ${SFTP_HOST}...`);
   await sftp.connect({ host: SFTP_HOST, username: SFTP_USER, password: SFTP_PASSWORD });
 
-  // Remove old index.html first
-  try {
-    await sftp.delete(`${remoteRoot}/index.html`);
-    console.log('Removed old index.html');
-  } catch {
-    // Didn't exist — fine
+  // Remove Dreamhost placeholder files that may block serving
+  const toDelete = ['index.html', 'favicon.ico', 'favicon.gif', 'quickstart.html'];
+  for (const f of toDelete) {
+    try {
+      await sftp.delete(`${remoteRoot}/${f}`);
+      console.log(`Removed ${f}`);
+    } catch {
+      // Didn't exist — fine
+    }
   }
 
   console.log(`Uploading dist/ → ${remoteRoot}/`);
