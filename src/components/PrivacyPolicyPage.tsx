@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
 
         <Section title="Overview">
           <p>
-            Kōwhai is a local audiobook player. Your audiobook files, titles, and listening
+            Kōwhai Audiobook Player (Kōwhai) is a local audiobook player. Your audiobook files, titles, and listening
             history never leave your device. The only data we may collect — and only with your
             explicit consent — is anonymous crash reports and basic usage statistics, sent via
             Google Firebase. This data helps us fix bugs and understand which features matter most.
