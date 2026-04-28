@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
       <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 backdrop-blur-xl bg-vault-950/70 border-b border-vault-800/30">
         <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <VaultIcon className="w-8 h-8" />
-          <span className="text-lg font-bold tracking-tight text-vault-50">Kōwhai</span>
+          <span className="text-lg font-bold tracking-tight text-vault-50">Kōwhai Audiobook Player</span>
         </a>
         <span className="text-vault-500 text-sm">Privacy Policy</span>
       </nav>
@@ -193,7 +193,7 @@ export default function PrivacyPolicyPage() {
 
       {/* Footer */}
       <footer className="border-t border-vault-800/30 py-8 px-6 text-center text-vault-600 text-xs">
-        <a href="/" className="hover:text-vault-400 transition-colors">← Back to Kōwhai</a>
+        <a href="/" className="hover:text-vault-400 transition-colors">← Back to Kōwhai Audiobook Player</a>
       </footer>
     </div>
   )

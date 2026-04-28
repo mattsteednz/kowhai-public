@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex items-center gap-3">
           <VaultIcon className="w-8 h-8" />
           <div>
-            <div className="text-vault-100 font-bold">Kōwhai</div>
+            <div className="text-vault-100 font-bold">Kōwhai Audiobook Player</div>
             <div className="text-vault-600 text-xs">MIT License · Free forever</div>
           </div>
         </div>
